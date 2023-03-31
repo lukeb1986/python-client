@@ -2,7 +2,7 @@
 
 We are excited to have you on board!
 
-These instructions contain the setup for contributors to the Steamship client library. 
+These instructions contain the setup for contributors to the Steamship client library.
 
 For information about *using* this library, please see README.md
 
@@ -21,7 +21,7 @@ For information about *using* this library, please see README.md
 
 First make sure you have Python3.8 -- the officially supported version
 
-We highly recommend using virtual environments for development. 
+We highly recommend using virtual environments for development.
 Set up your virtual environment using the following commands:
 
 ```
@@ -35,23 +35,25 @@ This will install the required dependencies (runtime and development) and regist
 
 ### Set up pre-commit-hooks
 
-We use pre-commit hooks to validate coding standards before submission to code review. To make sure your code is always validated before each commit, please install the required git hook scripts as follows: 
+We use pre-commit hooks to validate coding standards before submission to code review. To make sure your code is always validated before each commit, please install the required git hook scripts as follows:
+
 ```bash
 pre-commit install
 ```
 
-Once completed the pre-commit hooks wil run automatically on `git commit`. 
+Once completed the pre-commit hooks wil run automatically on `git commit`.
 
 When pre-commit hooks make file modifications, the `git commit` command that triggered them will fail and need to be run again. Simply run the command multiple times until it succeeds.
 
 You can run the pre-commit hooks manually via:
+
 ```bash
 pre-commit run --all-files
 ```
 
 ### Set your IDE to use proper Docstrings
 
-Steamship uses PyCharm for Python development. 
+Steamship uses PyCharm for Python development.
 
 In PyCharm:
 
@@ -76,7 +78,7 @@ Developers who are:
 
 ### Configuring Test Credentials
 
-The tests include integration tests that are intended to be performed against a running Steamship server. They all execute by loading the `test` profile from your Steamship client configuration. 
+The tests include integration tests that are intended to be performed against a running Steamship server. They all execute by loading the `test` profile from your Steamship client configuration.
 
 To establish a `test` profile, edit your `~/.steamship.json` file to ensure it has the following:
 
